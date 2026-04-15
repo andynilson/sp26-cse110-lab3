@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meeting Notes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Robotics Meeting Notes">
+    <link rel="icon" href="/pixel crest.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <h1>Robotics Team Meeting Notes</h1>
+    <p>Phase: Testing</p>
+</header>
+<nav>
+    <h3>Navigation:</h3>
+    <ul>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#intake">Intake</a></li>
+        <li><a href="#launcher">Launcher</a></li>
+        <li><a href="#fundraising">Fundraising</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+            <li>Discuss completed mechanisms from last month of work</li>
+            <li>Talk about intake testing and results</li>
+            <li>Explore options for launchers</li>
+            <li>Go over budget and fundraising</li>
+        </ol>
+        <div class="video">
+            <details>
+                <summary>Cool Robot Video</summary>
+                <video controls width="400">
+                    <source src="media/video.mp4" type="video/mp4">
+                </video>
+            </details>
+        </div>
+    </section>
+    <hr>
+    <section id="intake">
+        <h2>Intake</h2>
+        <ul>
+            <li>
+                <p>Completed main build</p>
+            </li>
+            <li>
+                <p>now working on testing intake <i>speed</i> and will focus on reliability next week</p>
+                <img src="media/intakeDiagram.png" width="500" alt="diagram of the intake">
+            </li>
+            <li>
+                <p>Not sure exactly how we will get this to fit<br><strong>Will probably need to explore other implimentations</strong></p>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section id="launcher">
+        <h2>Launcher</h2>
+        <ul>
+            <li>
+                <p>Launcher is built!</p>
+            </li>
+            <li>
+                <p><span>Need to continue refining code for launcher</span><br>Can likely be done in simulated environment</p>
+            </li>
+            <li>Should be complete within <em>20</em> hours of focussed work</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="fundraising">
+        <h2>Fundraising</h2>
+        <ul>
+            <li>
+                <p>Need to get back to <b>Company</b> about potential sponsorship</p>
+            </li>
+            <li>
+                <p>Forward looking budget set to be 25% higher than initially expected</p>
+            </li>
+        </ul>
+        <h3>Budget Overruns:</h3>
+        <ol>
+            <li>
+                <p>Robot Components: 15%</p>
+            </li>
+            <li>
+                <p>Travel: 12%</p>
+            </li>
+            <li>
+                <p>Registration fees: 8%</p>
+            </li>
+        </ol>
+    </section>
+
+</main>
+<footer>
+    <h3>Meeting Audio</h3>
+    <audio controls>
+        <source src="media/recording.mp3" type="audio/mpeg">
+    </audio>
+    <p>Notetaker: Andy</p>
+</footer>
+<form action="#">
+    <h3>Meeting Attendance</h3>
+    <label for="name">Your name</label>
+    <datalist id="names">
+        <option value="Andy">
+        <option value="Bob">
+        <option value="George">
+        <option value="John">
+        <option value="Kyle">
+    </datalist>
+    <input type="text" list="names" id="name" name="name">
+    <br>
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date">
+    <br>
+    <label for="pre-form-filled">Completed Pre-meeting Form</label>
+    <input type="checkbox" id="pre-form-filled" name="pre-form-filled">
+    <br>
+    <label for="meeting-satisfaction">Satisfaction with meeting</label>
+    <select id="meeting-satisfaction">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>Task Today</legend>
+        <input type="radio" name="role" id="tester" value="tester">
+        <label for="tester">Tester</label>
+        <br>
+        <input type="radio" name="role" id="builder" value="builder">
+        <label for="builder">Builder</label>
+        <br>
+        <input type="radio" name="role" id="strategist" value="strategist">
+        <label for="strategist">Strategist</label>
+        <br>
+        <input type="radio" name="role" id="film-review" value="film review">
+        <label for="film-review">Film Review</label>
+        <br>
+        <input type="radio" name="role" id="fundraising" value="fundraising">
+        <label for="fundraising">Fundraising</label>
+    </fieldset>
+    <textarea name="additional-comments" id="additional-comments" placeholder="Additional comments"></textarea>
+    <br>
+    <button type="button">Submit</button>
+</form>
+</body>
+</html>
