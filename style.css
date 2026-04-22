@@ -225,3 +225,75 @@ section:first-of-type {
         text-align: center;
     }
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.video {
+    margin-top: 1rem;
+}
+
+#launcher {
+    border-color: orange;
+}
+
+p {
+    line-height: 1.7;
+}
+
+input[type="checkbox"] {
+    accent-color: orange;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+h1, h2 {
+    letter-spacing: 0.03em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav > h2 {
+    margin-bottom: 0.5rem;
+}
+
+header ~ form {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header + nav {
+    margin-top: 1rem;
+}
+
+div.video {
+    max-width: 100%;
+}
+
+section:has(video) {
+    box-shadow: 0.4rem 0.4rem 0 var(--accent-soft, lightblue);
+}
+
+main {
+    & section ul {
+        padding-left: 1.5rem;
+    }
+
+    & section li {
+        margin-bottom: 0.5rem;
+    }
+}
