@@ -1,9 +1,172 @@
-body {
-    font-family: "Inter", Arial, sans-serif;
+/* Core CSS styling for Lab 3 */
+
+:root {
+    --page-bg: #eef4ff;
+    --card-bg: white;
+    --main-text: #1f2937;
+    --accent: rgb(42, 92, 170);
+    --accent-soft: hsl(213, 70%, 92%);
+    --border-color: rgba(42, 92, 170, 0.35);
+    --highlight: color-mix(in srgb, orange 65%, white 35%);
+    --wide-accent: color(display-p3 0.22 0.43 0.84);
+    --fallback-radius: 16px;
 }
 
+body {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 1.25rem;
+    padding-bottom: 2rem;
+    padding-left: 1.25rem;
+    width: 92%;
+    max-width: 70rem;
+    min-width: 320px;
+    background-color: var(--page-bg, #f5f7fb);
+    color: var(--main-text, #222222);
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* selector list */
 h1,
 h2,
 h3 {
     font-family: "Roboto Slab", Georgia, serif;
+    color: var(--accent, navy);
+    text-align: center;
+}
+
+/* element selectors */
+header,
+nav,
+section,
+footer,
+form {
+    background-color: var(--card-bg, white);
+    border-style: solid;
+    border-color: var(--border-color, lightgray);
+    border-width: 3px;
+    border-radius: var(--fallback-radius, 12px);
+}
+
+/* shorthand margin */
+nav,
+section,
+footer,
+form {
+    margin: 1rem 0 1rem 0;
+}
+
+/* shorthand padding */
+nav,
+section,
+footer,
+form {
+    padding: 1rem 1.25rem 1rem 1.25rem;
+}
+
+header {
+    margin: 0 0 1rem 0;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    background-color: var(--accent-soft, #dbeafe);
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    min-width: 15rem;
+}
+
+#agenda {
+    background-color: var(--accent-soft, #dbeafe);
+}
+
+.video {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    color: var(--accent, blue);
+    text-decoration: none;
+}
+
+strong,
+b {
+    text-decoration: underline;
+}
+
+nav a {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid var(--border-color, #b0c4de);
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+}
+
+hr {
+    display: none;
+}
+
+img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--wide-accent, #4f7fe0);
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+video {
+    width: 25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+    max-width: 30rem;
+}
+
+textarea {
+    width: 100%;
+    min-width: 12rem;
+    max-width: 100%;
+    height: 7rem;
+    margin-top: 0.75rem;
+}
+
+button {
+    display: block;
+    background-color: var(--highlight, orange);
+    color: #1f2937;
+    border: none;
+    border-radius: 0.5cm;
+    padding: 12px 20px;
+    margin: 1rem 0 0 0;
+}
+
+/* more text sizing */
+h1 {
+    font-size: 2.2rem;
+    margin: 0.2em 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+summary {
+    font-size: 1.1rem;
+    padding: 8px;
 }
